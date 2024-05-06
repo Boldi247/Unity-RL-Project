@@ -1,0 +1,29 @@
+{
+    "Shooter": {
+        "checkpoints": [
+            {
+                "steps": 61816,
+                "file_path": "results/TestTraining28/Shooter/Shooter-61816.onnx",
+                "reward": null,
+                "creation_time": 1714999385.3256261,
+                "auxillary_file_paths": [
+                    "results/TestTraining28/Shooter/Shooter-61816.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 61816,
+            "file_path": "results/TestTraining28/Shooter.onnx",
+            "reward": null,
+            "creation_time": 1714999385.3256261,
+            "auxillary_file_paths": [
+                "results/TestTraining28/Shooter/Shooter-61816.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1"
+    }
+}

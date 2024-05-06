@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
     private Rigidbody Rigidbody;
     private Vector3 dirVector;
 
+    public float bulletSpeed = 20f;
+
     void SelfDestruct()
     {
         Destroy(this.gameObject);
@@ -18,7 +20,7 @@ public class Projectile : MonoBehaviour
         dirVector = direction;
 
         Rigidbody = GetComponent<Rigidbody>();
-        Rigidbody.velocity = dirVector * 40f;
+        Rigidbody.velocity = dirVector * bulletSpeed;
     }
 
     void Start()

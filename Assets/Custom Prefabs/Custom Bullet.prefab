@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Custom Bullet
       objectReference: {fileID: 0}
+    - target: {fileID: 124846, guid: c08d8e39e38b0bc46b2cade287bd2961, type: 3}
+      propertyPath: m_TagString
+      value: Bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 499358, guid: c08d8e39e38b0bc46b2cade287bd2961, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -98,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8ded40f385c4836b950d0205502322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpeed: 5
 --- !u!54 &-3268687872491277674
 Rigidbody:
   m_ObjectHideFlags: 0

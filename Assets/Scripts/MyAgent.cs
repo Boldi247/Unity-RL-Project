@@ -124,7 +124,10 @@ public class MyAgent : Agent
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Wall"))
+
+        Debug.Log("Collision detected!" + collision.gameObject.tag);
+
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Wall")
         {
             enemyManager.SetEnemiesActive();
             AddReward(-1f);
