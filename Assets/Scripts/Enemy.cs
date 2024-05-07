@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
 {
     public int startingHealth = 100;
     public EnemyManager enemyManager;
+    public NavMeshAgent navMeshAgent; 
 
     private int CurrentHealth;
     private Vector3 StartPosition;
@@ -23,8 +24,16 @@ public class Enemy : MonoBehaviour
     {
         StartPosition = transform.position;
         CurrentHealth = startingHealth;
-
+        navMeshAgent = GetComponent<NavMeshAgent>();
         Agent.OnEnvironmentReset += Respawn;
+    }
+
+    private void Update()
+    {
+        if (Agent != null && navMeshAgent != null)
+        {
+            navMeshAgent.SetDestination(Agent.transform.position); 
+        }
     }
 
     public void GetShot(int damage, MyAgent shooter)
