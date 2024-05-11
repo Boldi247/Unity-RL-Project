@@ -2,28 +2,37 @@
     "Shooter": {
         "checkpoints": [
             {
-                "steps": 53414,
-                "file_path": "results\\Training1\\Shooter\\Shooter-53414.onnx",
-                "reward": -0.6383920267224312,
-                "creation_time": 1715079550.0918293,
+                "steps": 499975,
+                "file_path": "results/Training1/Shooter/Shooter-499975.onnx",
+                "reward": 0.6114178051551183,
+                "creation_time": 1715458567.097306,
                 "auxillary_file_paths": [
-                    "results\\Training1\\Shooter\\Shooter-53414.pt"
+                    "results/Training1/Shooter/Shooter-499975.pt"
+                ]
+            },
+            {
+                "steps": 500022,
+                "file_path": "results/Training1/Shooter/Shooter-500022.onnx",
+                "reward": 0.6161036525346055,
+                "creation_time": 1715458567.125159,
+                "auxillary_file_paths": [
+                    "results/Training1/Shooter/Shooter-500022.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 53414,
-            "file_path": "results\\Training1\\Shooter.onnx",
-            "reward": -0.6383920267224312,
-            "creation_time": 1715079550.0918293,
+            "steps": 500022,
+            "file_path": "results/Training1/Shooter.onnx",
+            "reward": 0.6161036525346055,
+            "creation_time": 1715458567.125159,
             "auxillary_file_paths": [
-                "results\\Training1\\Shooter\\Shooter-53414.pt"
+                "results/Training1/Shooter/Shooter-500022.pt"
             ]
         }
     },
     "metadata": {
         "stats_format_version": "0.3.0",
         "mlagents_version": "0.28.0",
-        "torch_version": "1.7.1+cu110"
+        "torch_version": "1.7.1"
     }
 }
