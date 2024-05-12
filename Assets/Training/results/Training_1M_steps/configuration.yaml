@@ -1,6 +1,6 @@
 default_settings: null
 behaviors:
-  Shooter:
+  My Behavior:
     trainer_type: ppo
     hyperparameters:
       batch_size: 1024
@@ -36,7 +36,7 @@ behaviors:
     init_path: null
     keep_checkpoints: 5
     checkpoint_interval: 500000
-    max_steps: 1000000 #Incrased this from 500k to 1M
+    max_steps: 1000000
     time_horizon: 64
     summary_freq: 50000
     threaded: false
@@ -56,13 +56,13 @@ engine_settings:
   width: 84
   height: 84
   quality_level: 5
-  time_scale: 20
+  time_scale: 20.0
   target_frame_rate: -1
   capture_frame_rate: 60
   no_graphics: false
 environment_parameters: null
 checkpoint_settings:
-  run_id: TestLearning-1
+  run_id: Training_1M_steps
   initialize_from: null
   load_model: false
   resume: false
